@@ -31,16 +31,86 @@
   background-color: #d10000;
   border:4px solid #333;
 }
-p{
+.original{
   font-size: 50px;
   line-height: 500px;
   text-align: center;
   color: #fff;
 }
+
+.box .add01, 
+.box .add02{
+	display:block;
+	width:300px;
+	height:40px;
+	line-height:36px;
+	text-align:center;
+	margin:0 auto;
+	border:solid 2px #000;
+	background:#ddd;
+}
+
+button {margin: auto;}    
+.c_button.c_w300 {
+    display: inline-block;
+    padding-top: 5px;
+    padding-right: 0 !important;
+    padding-bottom: 4px;
+    padding-left: 0 !important;
+    border-radius: 8px;
+    width: 300px;
+}
+    
+    .c_button.c_h40 {
+    height: 40px;
+    line-height: 39px;
+}
+    
+/* 共通ボタン - デフォルト */
+.c_button,
+.c_button:visited,
+.c_button:hover,
+.c_button:active {
+    color: #333333;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 11px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+    border: solid 1px #999;
+    border-radius: 10px;
+    cursor: pointer;
+}
+    
+/* 共通ボタン - イエロー */
+
+.c_button.c_yellow {
+    color: #663C00;
+    border-color: #F28D00;
+    background: #FFC941;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFE566), to(#FFAB1A));
+    background-image: -webkit-linear-gradient(top, #FFE566, #FFAB1A);
+    background-image: -moz-linear-gradient(top, #FFE566, #FFAB1A);
+    background-image: -ms-linear-gradient(top, #FFE566, #FFAB1A);
+    background-image: -o-linear-gradient(top, #FFE566, #FFAB1A);
+    background-image: linear-gradient(top, #FFE566, #FFAB1A);
+    -webkit-box-shadow: inset 0 1px 1px #FFF2B2, inset -1px 0 1px #FFE566, inset 0 -1px 1px #FFE566, inset 1px 0 1px #FFE566, inset 1px 0 1px #FFE566, 0 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 1px #FFF2B2, inset -1px 0 1px #FFE566, inset 0 -1px 1px #FFE566, inset 1px 0 1px #FFE566, inset 1px 0 1px #FFE566, 0 1px 2px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: inset 0 1px 1px #FFF2B2, inset -1px 0 1px #FFE566, inset 0 -1px 1px #FFE566, inset 1px 0 1px #FFE566, inset 1px 0 1px #FFE566, 0 1px 2px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: inset 0 1px 1px #FFF2B2, inset -1px 0 1px #FFE566, inset 0 -1px 1px #FFE566, inset 1px 0 1px #FFE566, inset 1px 0 1px #FFE566, 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 1px #FFF2B2, inset -1px 0 1px #FFE566, inset 0 -1px 1px #FFE566, inset 1px 0 1px #FFE566, 0 1px 2px rgba(0, 0, 0, 0.2);
+}
 </style>
-<button>クリック</button>
+<button class="c_button c_yellow c_w300 c_h40">クリック</button>
 <div class="box">
-  <p>Git道場へようこそ</p>
+  <p class="original">Git道場へようこそ</p>
+	<p class="add01">詳細を追加するよ。</p>
+	<p class="add02">もう一個追加</p>
 </div>
 </body>
 </html>
